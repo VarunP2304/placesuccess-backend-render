@@ -11,7 +11,12 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors());
+// Add CORS options to allow requests from your Vercel domain
+app.use(cors({
+  origin: ['https://your-vercel-app.vercel.app', 'http://localhost:3000'],
+  credentials: true
+}));
+
 app.use(express.json());
 
 // Import routes
