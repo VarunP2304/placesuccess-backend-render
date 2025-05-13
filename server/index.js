@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 // Add CORS options to allow requests from your Vercel domain
 app.use(cors({
-  origin: ['https://your-vercel-app.vercel.app', 'http://localhost:3000'],
+  origin: ['https://placement-success-platform.vercel.app/', 'https://placement-success-platform-git-main-varunp2304s-projects.vercel.app/'],
   credentials: true
 }));
 
